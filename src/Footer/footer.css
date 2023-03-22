@@ -1,0 +1,6 @@
+.footer-link {
+    color: white;
+}
+.footer-link:hover {
+    color: rgba(255, 255, 255, 0.699);
+}

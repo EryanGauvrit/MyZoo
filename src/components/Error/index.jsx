@@ -4,7 +4,8 @@ function Error() {
     return (
         <main>
             <TitlePage
-                title='MyZoo - Erreur'
+                titlePage='MyZoo - Erreur'
+                title='ERREUR - 404 !'
                 color='bg-danger'
             />
             <p>

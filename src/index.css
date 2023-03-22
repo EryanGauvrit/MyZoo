@@ -1,0 +1,17 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Indie Flower', cursive;
+}
+
+.site {
+    min-height: 100vh;
+    margin-bottom: -140px;
+}
+
+footer, .minSite {
+    height: 140px;
+}
+
+.img-footer-link {
+    height: 60px;
+}
+

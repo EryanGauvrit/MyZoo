@@ -4,7 +4,8 @@ function Contact() {
     return (
         <main>
             <TitlePage
-                title='MyZoo - Contact'
+                titlePage='MyZoo - Contact'
+                title='Contactez MyZoo'
             />
         </main>
     )
