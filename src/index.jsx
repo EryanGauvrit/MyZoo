@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Footer from './Footer';
 import Mentions from './pages/Mentions';
+import Parc from './pages/Parc';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,6 +19,9 @@ root.render(
         <Routes>
           <Route exact path="/"
             element={<Home />}
+          />
+          <Route exact path="/animaux"
+            element={<Parc />}
           />
           <Route exact path="/contact"
             element={<Contact />}
