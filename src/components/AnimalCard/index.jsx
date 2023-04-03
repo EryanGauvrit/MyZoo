@@ -1,7 +1,7 @@
 import Button from "../Button";
 
 
-function AnimalCard({ animalDatas }) {
+function AnimalCard({ animalDatas, filtreFamille, filtreContinent }) {
     return (
         <div className="card mb-3">
             <h3 className="card-header">{animalDatas.id} - {animalDatas.nom}</h3>
@@ -13,7 +13,7 @@ function AnimalCard({ animalDatas }) {
             </div>
             <div className="card-body">
                 <h3>
-                    Famille : <Button typeBtn="btn-primary">{animalDatas.famille.libelleFamille.toUpperCase()}</Button>
+                    Famille : <Button typeBtn="btn-dark" clic={() => filtreFamille(animalDatas.famille.idFamille)}>{animalDatas.famille.libelleFamille.toUpperCase()}</Button>
                 </h3>
                 <div>{animalDatas.famille.descriptionFamille}</div>
             </div>
@@ -35,7 +35,12 @@ function AnimalCard({ animalDatas }) {
                                 break;
                             default: colorBtn = "btn-secondary";
                         }
-                        return <Button typeBtn={colorBtn} css='m-1' key={continent.idContinent}>{continent.libelleContinent.toUpperCase()}</Button>
+                        return <Button
+                            typeBtn={colorBtn}
+                            css='m-1'
+                            key={continent.idContinent}
+                            clic={() => filtreContinent(continent.idContinent)}
+                        >{continent.libelleContinent.toUpperCase()}</Button>
                     })
                 }
             </div>
