@@ -17,6 +17,7 @@ class Application extends Component {
         const famille = this.state.filtreFamille ? this.state.filtreFamille : "-1";
         const continent = this.state.filtreContinent ? this.state.filtreContinent : "-1";
         axios.get(`http://localhost/SERVEURANIMAUX/front/animaux/${famille}/${continent}`)
+            // axios.get(`https://myzoo-admin.eryan-portfolio.com/front/animaux/${famille}/${continent}`)
             .then(reponse => {
                 this.setState({ animaux: Object.values(reponse.data) });
             })
@@ -25,10 +26,12 @@ class Application extends Component {
     componentDidMount = () => {
         this.loadData();
         axios.get(`http://localhost/SERVEURANIMAUX/front/continents`)
+            // axios.get(`https://myzoo-admin.eryan-portfolio.com/front/continents`)
             .then(reponse => {
                 this.setState({ listeContinents: Object.values(reponse.data) });
             })
         axios.get(`http://localhost/SERVEURANIMAUX/front/familles`)
+            // axios.get(`https://myzoo-admin.eryan-portfolio.com/front/familles`)
             .then(reponse => {
                 this.setState({ listeFamilles: Object.values(reponse.data) });
             })
