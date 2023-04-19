@@ -25,6 +25,9 @@ function Footer() {
                     <a href='mailto:contact@myzoo.com' className='nav-link p-0 m-0 footer-link'>
                         Envoyer un mail
                     </a>
+                    <a href='https://myzoo-admin.eryan-portfolio.com/back/login' className='nav-link p-0 m-0 footer-link'>
+                        Administration
+                    </a>
                 </div>
             </div>
         </footer>
